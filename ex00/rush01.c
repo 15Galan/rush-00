@@ -40,8 +40,10 @@ void	print_coords(int a, int b, int max_x, int max_y)
 }
 
 /**
- * @brief   Muestra la figura pedida de la siguiente forma:
+ * @brief   Muestra la figura pedida según el RUSH 01.
  *
+ * @param x		Ancho total de la figura.
+ * @param y		Alto total de la figura.
  */
 void	rush(int x, int y)
 {
