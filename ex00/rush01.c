@@ -6,11 +6,11 @@
 /*   By: antgalan <antgalan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/22 12:20:25 by antgalan          #+#    #+#             */
-/*   Updated: 2022/10/22 16:42:13 by antgalan         ###   ########.fr       */
+/*   Updated: 2022/10/22 17:38:37 by antgalan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+void	ft_putchar(char c);
 
 /**
  * @brief	Imprime un carácter según la figura descrita.
