@@ -6,7 +6,7 @@
 /*   By: antgalan <antgalan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/22 12:20:25 by antgalan          #+#    #+#             */
-/*   Updated: 2022/10/22 17:38:37 by antgalan         ###   ########.fr       */
+/*   Updated: 2022/10/22 21:48:15 by antgalan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,19 +24,18 @@ void	print_coords(int a, int b, int max_x, int max_y)
 {
 	max_x--;
 	max_y--;
-
 	if (a == 0 && b == 0)
-		ft_putchar("/");
+		ft_putchar('/');
 	else if (a == max_x && b == 0)
-		ft_putchar("\\");
+		ft_putchar('\\');
 	else if (a == 0 && b == max_y)
-		ft_putchar("\\");
+		ft_putchar('\\');
 	else if (a == max_x && b == max_y)
-		ft_putchar("/");
+		ft_putchar('/');
 	else if ((0 < a && a < max_x) && (0 < b && b < max_y))
-		ft_putchar(" ");
+		ft_putchar(' ');
 	else
-		ft_putchar("*");
+		ft_putchar('*');
 }
 
 /**
@@ -61,7 +60,7 @@ void	rush(int x, int y)
 				print_coords(width, height, x, y);
 				width++;
 			}
-			write(1, "\n", 1);
+			ft_putchar('\n');
 			height++;
 		}
 	}
