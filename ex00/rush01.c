@@ -25,11 +25,15 @@ void	print_coords(int a, int b, int max_x, int max_y)
 	max_x--;
 	max_y--;
 
-	if ((a == 0 && b == 0) || (a == max_x && b == max_y))
+	if (a == 0 && b == 0)
 		write(1, "/", 1);
-	else if ((a == max_x && b == 0) || (a == 0 && b == max_y))
+	else if (a == max_x && b == 0)
 		write(1, "\\", 1);
-	else if ((0 < a && a < 4) && (0 < b && b < 4))
+	else if (a == 0 && b == max_y)
+		write(1, "\\", 1);
+	else if (a == max_x && b == max_y)
+		write(1, "/", 1);
+	else if ((0 < a && a < max_x) && (0 < b && b < max_y))
 		write(1, " ", 1);
 	else
 		write(1, "*", 1);
