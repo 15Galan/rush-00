@@ -26,17 +26,17 @@ void	print_coords(int a, int b, int max_x, int max_y)
 	max_y--;
 
 	if (a == 0 && b == 0)
-		write(1, "/", 1);
+		ft_putchar("/");
 	else if (a == max_x && b == 0)
-		write(1, "\\", 1);
+		ft_putchar("\\");
 	else if (a == 0 && b == max_y)
-		write(1, "\\", 1);
+		ft_putchar("\\");
 	else if (a == max_x && b == max_y)
-		write(1, "/", 1);
+		ft_putchar("/");
 	else if ((0 < a && a < max_x) && (0 < b && b < max_y))
-		write(1, " ", 1);
+		ft_putchar(" ");
 	else
-		write(1, "*", 1);
+		ft_putchar("*");
 }
 
 /**
