@@ -6,7 +6,7 @@
 /*   By: antgalan <antgalan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/23 08:57:06 by antgalan          #+#    #+#             */
-/*   Updated: 2022/10/23 09:26:05 by antgalan         ###   ########.fr       */
+/*   Updated: 2022/10/23 09:28:27 by antgalan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,10 +24,7 @@ void	print_coords(int a, int b, int max_x, int max_y)
 {
 	max_x--;
 	max_y--;
-	if ((a == 0 && b == 0)
-		|| (a == max_x && b == 0)
-		|| (a == 0 && b == max_y)
-		|| (a == max_x && b == max_y))
+	if ((a == 0 || a == max_x) && (b == 0 || b == max_y))
 		ft_putchar('o');
 	else if (a == 0 || a == max_x)
 		ft_putchar('|');
@@ -38,7 +35,7 @@ void	print_coords(int a, int b, int max_x, int max_y)
 }
 
 /**
- * @brief   Muestra la figura pedida según el RUSH 01.
+ * @brief   Muestra la figura pedida según el RUSH 00.
  *
  * @param x		Ancho total de la figura.
  * @param y		Alto total de la figura.
