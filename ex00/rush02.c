@@ -6,7 +6,7 @@
 /*   By: antgalan <antgalan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/22 12:20:25 by antgalan          #+#    #+#             */
-/*   Updated: 2022/10/23 13:00:54 by antgalan         ###   ########.fr       */
+/*   Updated: 2022/10/26 14:00:01 by antgalan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@ void	ft_putchar(char c);
 /**
  * @brief	Prints a character according to the figure described.
  * 
- * @param a 	Coordinate 'a' of the character to display.
- * @param b 	Coordinate 'b' of the character to display.
+ * @param a		Coordinate 'a' of the character to display.
+ * @param b		Coordinate 'b' of the character to display.
  * @param max_x Maximum 'x' coordinate (width) of the figure.
  * @param max_y Maximum 'y' coordinate (height) of the figure.
  */
@@ -38,7 +38,7 @@ void	select_char(int a, int b, int max_x, int max_y)
  * @brief	Displays the requested figure according to RUSH 02.
  *
  * @param x		Total width of the shape.
- * @param y 	Total height of the shape.
+ * @param y		Total height of the shape.
  */
 void	rush(int x, int y)
 {
